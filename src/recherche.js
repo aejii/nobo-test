@@ -41,7 +41,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   inputRoot: {
-    color: 'inherit',
+    color: 'white',
+    borderRadius: 3,
+    border: 0,
+    backgroundColor: 'grey'
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
@@ -88,6 +91,7 @@ export default function Recherche() {
 
   return (
     <>
+    <div>
       <InputBase
         placeholder="Search…"
         classes={{
@@ -96,6 +100,8 @@ export default function Recherche() {
         }}
         onChange={onChange}
       />
+    </div>
+      
       {cardArray.map(card => {
         return <MediaCard key={card.show.id} keyy={card.show.id} title={card.show.name} url={card.show.image?.medium}/>
       })}

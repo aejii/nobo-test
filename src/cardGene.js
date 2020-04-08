@@ -8,7 +8,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    height: 200,
+    width: 400
   },
   media: {
     height: 140
@@ -18,8 +19,7 @@ const useStyles = makeStyles({
 export default function MediaCard(props) {
   const classes = useStyles();
   return (
-    <
-      button onClick={() => window.location.href='/detail/'+props.keyy} className="unstyled-button">
+    <button onClick={() => window.location.href='/detail/'+props.keyy} className="unstyled-button">
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
