@@ -60,8 +60,7 @@ export default function Detail(props) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              {props.title}
-              <p>{nom}</p>
+              <p>Name :{nom}</p>
               <p>Type :{type}</p>
               <p>Rating :{rating}</p>
               <p>Premiere :{premiere}</p>
